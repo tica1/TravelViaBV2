@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/onama.css">
+        <link rel="stylesheet" href="css/putovanja.css">
+        <link rel="stylesheet" href="css/kontakt.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title> Bon Voyage</title>  
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/31081dd50e.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <div class="zaglavlje">
+
+            <div class="navigationmenu">
+                <div class="e-mail">
+                    <i class="kontaktic"><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></i>
+                </div>
+                <div class="travelogo">
+                    <img src="images/logo1.png" alt="travel">
+                </div>
+            </div>
+
+            <div class="navmenu">
+                <ul>
+                    <li><a href="index.html">Naslovna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li><a href="putovanja.html">Putovanja</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="klogo">
+                <div class="logic">
+                    <div id="kontaktlogo">
+                        <img src="images/kontaktlogo.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="svikontakti">
+
+                <div class="kontmejl">
+                    <p><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></p>
+                </div>
+                <div class="kontfon">
+                    <p><i class="fa fa-phone"></i>021111111</p>
+                    <p><i class="fa fa-phone"></i>021111112</p>
+                </div>
+                <div class="kontadr">
+                    <p><i class="fa fa-map-pin"></i>Bul.Kralja Petra I 8b</p>
+                    <p><i class="fa fa-map-pin"></i>Bul.Vojvode Stepe 57</p>
+                </div>
+
+            </div>
+
+            <div class="forma">
+                <h3> Prijavite se ako želite da dobijate naš newsletter</h3>
+                <div class="ime">
+                    <form name="registracija">
+                    <p>Vaše ime:<br>
+                    <input type="text" name="ime"><br>
+                    <p>E-mail:<br>
+                    <input type="text" name="mail"><br>
+                    <input type="submit" name="submit" value="Potvrdi" onclick="unos()"><br>
+                    </form>
+                </div>
+            </div>
+
+            <div class="maps">
+                <div class="mapica">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.2966337841813!2d19.833929576807048!3d45.262014171071364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b105bb27e5cd5%3A0xae4b24861dec3e62!2z0JHRg9C70LXQstCw0YAg0LrRgNCw0ZnQsCDQn9C10YLRgNCwIEkgOCwg0J3QvtCy0Lgg0KHQsNC0!5e0!3m2!1ssr!2srs!4v1702666125324!5m2!1ssr!2srs"></iframe>
+                </div>
+            </div>
+            <script>
+                //ovo samo uzima vrednost unetu kroz formu da nam da potvrdu da je uneto
+                function unos() {
+                    var ime = document.registracija.ime.value;
+                    var mail = document.registracija.mail.value;
+                    alert("Hvala Vam na prijavi, " + ime + "\nDobićete potvrdu prijave na " + mail);
+                }
+            </script>
+        </div>
+
+
+        <footer>
+            
+            <div class="dodatninfo">
+                <div class="brtelefona">
+                    <h3>Telefon</h3>
+                    <p><i class="fa fa-phone"></i>021111111</p>
+                    <p><i class="fa fa-phone"></i>021111112</p>
+                </div>
+                <div class="mejl">
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></p>
+                </div>
+                <div class="adresa">
+                    <h3>Adresa</h3>
+                    <p><i class="fa fa-map-pin"></i>Bul.Kralja Petra I 8b</p>
+                    <p><i class="fa fa-map-pin"></i>Bul.Vojvode Stepe 57</p>
+                </div>
+            </div>
+
+        </footer>
+
+        <div id="drustvenemreze">
+            <div>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" class="fa fa-whatsapp fa-lg"></a>
+                </li>
+            </ul>
+            </div>
+            <div class="dno">
+                <p class="kopirajt">Tijana Simunic &copy; IT94/22</p>
+                <img src="images/logo.png" alt="logo">
+            </div>
+        </div>
+
+    </body>
+
+</html>

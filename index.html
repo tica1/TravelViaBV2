@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/onama.css">
+        <link rel="stylesheet" href="css/putovanja.css">
+        <link rel="stylesheet" href="css/kontakt.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title> Bon Voyage</title>  
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/31081dd50e.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <div class="zaglavlje">
+
+            <div class="navigationmenu">
+                <div class="e-mail">
+                    <i class="kontaktic"><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></i>
+                </div>
+                <div class="travelogo">
+                    <img src="images/logo1.png" alt="travel">
+                </div>
+            </div>
+
+            <div class="navmenu">
+                <ul>
+                    <li><a href="index.html">Naslovna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li><a href="putovanja.html">Putovanja</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="prva">
+                <div id="naslovnica">
+                    <img src="images/naslovna.jpg">
+                </div>
+            </div>
+
+            <div class="tekst">
+                <!--poziv funkcije stil menja izgled h1 i p ovde ispod-->
+                <div class="kuda_putovati" id="uvod" onmouseover="stil(document.getElementById('uvod'))">
+                    <h1>Vreme je za odmor</h1>    
+                    <p>Aktuelne ponude</p>
+                </div>
+                <div class="whereto">
+                    <div class="evropa" id="evropa">
+                        <h3 style="text-align: center;">Autobuske ture evropskih gradova</h3>
+                        <!--jumptoputovanja te baca na drugu stranu, tamo gde su putovanja i otvara direktno ponude-->
+                        <button class="dugme" onclick="JumpToPutovanja(document.getElementById('evropa').id)"> Za više informacija, kliknite ovde! </button>
+                        <img src="images/evropa.jpg" alt="evropa">
+                    </div>
+                    <div class="zima" id="zima">
+                        <h3 style="text-align: center;">Zima 2024</h3>
+                        <button class="dugme" onclick="JumpToPutovanja(document.getElementById('zima').id)"> Za više informacija, kliknite ovde! </button>
+                        <img src="images/zima.jpg" alt="zima">
+                    </div>
+                    <div class="novagodina" id="novagodina">
+                        <h3 style="text-align: center;">Nova Godina 2024</h3>
+                        <button class="dugme" onclick="JumpToPutovanja(document.getElementById('novagodina').id)"> Za više informacija, kliknite ovde! </button>
+                        <img src="images/novagodina.jpg" alt="novagodina">
+                    </div>
+                    <div class="prolece" id="prolece">
+                        <h3 style="text-align: center;">Proleće 2024</h3>
+                        <button class="dugme" onclick="JumpToPutovanja(document.getElementById('prolece').id)"> Za više informacija, kliknite ovde! </button>
+                        <img src="images/prolece.jpg" alt="prolece">
+                    </div>
+                    <div class="letovanje" id="leto">
+                        <h3 style="text-align: center;">Letovanje 2024</h3>
+                        <button class="dugme" onclick="JumpToPutovanja(document.getElementById('leto').id)"> Za više informacija, kliknite ovde! </button>
+                        <img src="images/letovanje.jpg" alt="letovanje">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            
+            <div class="dodatninfo">
+                <div class="brtelefona">
+                    <h3>Telefon</h3>
+                    <p><i class="fa fa-phone"></i>021111111</p>
+                    <p><i class="fa fa-phone"></i>021111112</p>
+                </div>
+                <div class="mejl">
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></p>
+                </div>
+                <div class="adresa">
+                    <h3>Adresa</h3>
+                    <p><i class="fa fa-map-pin"></i>Bul.Kralja Petra I 8b</p>
+                    <p><i class="fa fa-map-pin"></i>Bul.Vojvode Stepe 57</p>
+                </div>
+            </div>
+
+        </footer>
+
+        <div id="drustvenemreze">
+            <div>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" class="fa fa-whatsapp fa-lg"></a>
+                </li>
+            </ul>
+            </div>
+            <div class="dno">
+                <p class="kopirajt">Tijana Simunic &copy; IT94/22</p>
+                <img src="images/logo.png" alt="logo">
+            </div>
+        </div>
+
+        <script>
+            var tip;
+            function JumpToPutovanja (tip) {
+                localStorage.setItem("putovanje", tip);
+                window.location = "putovanja.html";
+                return;
+            }
+            function stil (id) {
+                var id;
+                id.style.fontsize = "50px";
+                id.style.color = "white";
+            }
+        </script>
+    </body>
+</html>

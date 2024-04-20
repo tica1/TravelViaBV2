@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/onama.css">
+        <link rel="stylesheet" href="css/putovanja.css">
+        <link rel="stylesheet" href="css/kontakt.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title> Bon Voyage</title>  
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/31081dd50e.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <div class="zaglavlje">
+            <script>
+                //ova funkcija nam vezuje linkove turističkih stranica lokacija sa izborom dole
+                var grad;
+                var sezona;
+                var ulaz;
+                function opening (ulaz) {
+                    window.open(ulaz);
+                    return;
+                }    
+                function linkovi (grad, sezona) {
+                    var link;
+                    switch (sezona) {
+                        case "zima":
+                            var links = ["https://www.alta-badia.org/en/altabadia/san-cassiano/", "https://www.andermatt.swiss/en", "https://www.banskoski.com/en", "https://www.serbia.travel/sr/vidi-srbiju/planine-srbije/zlatar"];
+                        break;
+                        case "prolece":
+                            var links = ["https://www.serbia.travel/sr/vidi-srbiju/planine-srbije/tara", "https://www.austria.info/en/where-to-go/cities/vienna", "https://www.spain.info/en/destination/barcelona/", "https://www.italia.it/en/veneto/venice"];
+                        break;
+                        case "leto":
+                            var links = ["https://www.visitgreece.gr/islands/cyclades/santorini/", "https://www.porec.hr/", "https://www.tripadvisor.com/Tourism-g297549-Hurghada_Red_Sea_and_Sinai-Vacations.html", "https://www.tripadvisor.com/Tourism-g298033-Marmaris_Marmaris_District_Mugla_Province_Turkish_Aegean_Coast-Vacations.html"];
+                        break;
+                        case "evropa":
+                            var links = ["https://www.gotobrno.cz/en/", "https://www.visitbruges.be/en", "https://www.iamsterdam.com/en", "https://www.visitdublin.com/"];
+                        break;
+                        case "ng":
+                            var links = ["https://www.prague.eu/en", "https://parisjetaime.com/eng/", "https://www.visitdubai.com/en/", "https://www.budapest.net/"];
+                        break;
+                    } 
+                    for (var i=0; i<links.length; i++) {
+                        if (links[i].includes(grad)) {
+                            link = links[i];
+                            break;
+                        }
+                    }
+                    tekst = "<button class='dugme2' onclick='opening(\"" + link + "\")'>Za više informacija kliknite ovde!</button>";
+                    return tekst;
+                }
+            </script>
+            <div class="navigationmenu">
+                <div class="e-mail">
+                    <i class="kontaktic"><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></i>
+                </div>
+                <div class="travelogo">
+                    <img src="images/logo1.png" alt="travel">
+                </div>
+            </div>
+            
+            <div class="navmenu">
+                <ul>
+                    <li><a href="index.html">Naslovna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li><a href="putovanja.html">Putovanja</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="prva">
+                <div id="naslovnica">
+                    <img src="images/naslovna.jpg">
+                </div>
+            </div>
+
+            <div class="izborprolece" id="prolece">
+                <h2>Proleće</h2>
+                <div class="izborprolece1">
+                    <div class="tara">
+                        <h3>Tara, Srbija</h3>
+                        <img src="images/tara.jpg" alt="Photo">
+                        <div id="tara">
+                            <script>
+                                var tara = linkovi(document.getElementById("tara").id, document.getElementById("prolece").id);
+                                document.write(tara);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="vienna">
+                        <h3>Beč, Austrija</h3>
+                        <img src="images/bec.jpg" alt="Photo">
+                        <div id="vienna">
+                            <script>
+                                var bec = linkovi(document.getElementById("vienna").id, document.getElementById("prolece").id);
+                                document.write(bec);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="barcelona">
+                        <h3>Barselona, Španija</h3>
+                        <img src="images/barsa.jpg" alt="Photo">
+                        <div id="barcelona">
+                            <script>
+                                var barsa = linkovi(document.getElementById("barcelona").id, document.getElementById("prolece").id);
+                                document.write(barsa);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="venice">
+                        <h3>Venecija, Italija</h3>
+                        <img src="images/venecija.jpg" alt="Photo">
+                        <div id="venice">
+                            <script>
+                                var venecija = linkovi(document.getElementById("venice").id, document.getElementById("prolece").id);
+                                document.write(venecija);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="izborjesen" id="evropa">
+                <h2>Autobuske ture Evropom</h2>
+                <div class="izborjesen1">
+                    <div class="brno">
+                        <h3>Brno, Češka</h3>
+                        <img src="images/brno.jpg" alt="Photo">
+                        <div id="brno">
+                            <script>
+                                var brno = linkovi(document.getElementById("brno").id, document.getElementById("evropa").id);
+                                document.write(brno);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="bruges">
+                        <h3>Briž, Belgija</h3>
+                        <img src="images/briz.jpg" alt="Photo">
+                        <div id="bruges">
+                            <script>
+                                var bruges = linkovi(document.getElementById("bruges").id, document.getElementById("evropa").id);
+                                document.write(bruges);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="amsterdam">
+                        <h3>Amsterdam, Holandija</h3>
+                        <img src="images/amsterdam.jpg" alt="Photo">
+                        <div id="amsterdam">
+                            <script>
+                                var amsterdam = linkovi(document.getElementById("amsterdam").id, document.getElementById("evropa").id);
+                                document.write(amsterdam);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="dublin">
+                        <h3>Dablin, Irska</h3>
+                        <img src="images/dablin.jpg" alt="Photo">
+                        <div id="dublin">
+                            <script>
+                                var dublin = linkovi(document.getElementById("dublin").id, document.getElementById("evropa").id);
+                                document.write(dublin);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="izborleto" id="leto">
+                <h2>Leto</h2>
+                <div class="izborleto1">
+                    <div class="santorini">
+                        <h3>Santorini, Grčka</h3>
+                        <img src="images/santorini.jpg" alt="Photo">
+                        <div id="santorini">
+                            <script>
+                                var santorini = linkovi(document.getElementById("santorini").id, document.getElementById("leto").id);
+                                document.write(santorini);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="porec">
+                        <h3>Poreč, Hrvatska</h3>
+                        <img src="images/porec.jpg" alt="Photo">
+                        <div id="porec">
+                            <script>
+                                var porec = linkovi(document.getElementById("porec").id, document.getElementById("leto").id);
+                                document.write(porec);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="hurghada">
+                        <h3>Hurgada, Egipat</h3>
+                        <img src="images/hurgada.jpg" alt="Photo">
+                        <div id="hurghada">
+                            <script>
+                                var hurghada = linkovi(document.getElementById("hurghada").id, document.getElementById("leto").id);
+                                document.write(hurghada);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="marmaris">
+                       <h3>Marmaris, Turska</h3>
+                        <img src="images/marmaris.jpg" alt="Photo">
+                        <div id="marmaris">
+                            <script>
+                                var marmaris = linkovi(document.getElementById("marmaris").id, document.getElementById("leto").id);
+                                document.write(marmaris);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="izborzima" id="zima">
+                <h2>Zima</h2>
+                <div class="izborzima1">
+                    <div class="cassiano">
+                        <h3>San Cassiano, Italija</h3>
+                        <img src="images/sancassiano.jpg" alt="Photo">
+                        <div id="cassiano">
+                            <script>
+                                var cassiano = linkovi(document.getElementById("cassiano").id, document.getElementById("zima").id);
+                                document.write(cassiano);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="andermatt">
+                        <h3>Andermatt, Švajcarska</h3>
+                        <img src="images/andermatt.jpg" alt="Photo">
+                        <div id="andermatt">
+                            <script>
+                                var andermatt = linkovi(document.getElementById("andermatt").id, document.getElementById("zima").id);
+                                document.write(andermatt);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="bansko">
+                        <h3>Bansko, Bugarska</h3>
+                        <img src="images/bansko.jpg" alt="Photo">
+                        <div id="bansko">
+                            <script>
+                                var bansko = linkovi(document.getElementById("bansko").id, document.getElementById("zima").id);
+                                document.write(bansko);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="zlatar">
+                        <h3>Zlatar, Srbija</h3>
+                        <img src="images/zlatar.jpg" alt="Photo">
+                        <div id="zlatar">
+                            <script>
+                                var zlatar = linkovi(document.getElementById("zlatar").id, document.getElementById("zima").id);
+                                document.write(zlatar);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="izborng" id="ng">
+                <h2>Nova Godina</h2>
+                <div class="izborng1">
+                    <div class="prague">
+                       <h3>Prag, Češka</h3>
+                       <img src="images/prag.jpg" alt="Photo">
+                       <div id="prague">
+                        <script>
+                            var prague = linkovi(document.getElementById("prague").id, document.getElementById("ng").id);
+                            document.write(prague);
+                        </script>
+                        </div>
+                    </div>
+                    <div class="paris">
+                        <h3>Pariz, Francuska</h3>
+                        <img src="images/paris.jpg" alt="Photo">
+                        <div id="paris">
+                        <script>
+                            var paris = linkovi(document.getElementById("paris").id, document.getElementById("ng").id);
+                            document.write(paris);
+                        </script>
+                        </div>
+                    </div>
+                    <div class="dubai">
+                        <h3>Dubai, UAE</h3>
+                        <img src="images/dubai.jpg" alt="Photo">
+                        <div id="dubai">
+                        <script>
+                            var dubai = linkovi(document.getElementById("dubai").id, document.getElementById("ng").id);
+                            document.write(dubai);
+                        </script>
+                        </div>
+                    </div>
+                    <div class="budapest">
+                        <h3>Budimpešta, Mađarska</h3>
+                        <img src="images/budimpesta.jpg" alt="Photo">
+                        <div id="budapest">
+                        <script>
+                            var budapest = linkovi(document.getElementById("budapest").id, document.getElementById("ng").id);
+                            document.write(budapest);
+                        </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            
+            <div class="dodatninfo">
+                <div class="brtelefona">
+                    <h3>Telefon</h3>
+                    <p><i class="fa fa-phone"></i>021111111</p>
+                    <p><i class="fa fa-phone"></i>021111112</p>
+                </div>
+                <div class="mejl">
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></p>
+                </div>
+                <div class="adresa">
+                    <h3>Adresa</h3>
+                    <p><i class="fa fa-map-pin"></i>Bul.Kralja Petra I 8b</p>
+                    <p><i class="fa fa-map-pin"></i>Bul.Vojvode Stepe 57</p>
+                </div>
+            </div>
+
+        </footer>
+
+        <div id="drustvenemreze">
+            <div>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" class="fa fa-whatsapp fa-lg"></a>
+                </li>
+            </ul>
+            </div>
+            <div class="dno">
+                <p class="kopirajt">Tijana Simunic &copy; IT94/22</p>
+                <img src="images/logo.png" alt="logo">
+            </div>
+        </div>
+        <script>
+            var flag = 0;
+            //ova linija ispod uzima varijablu iz stranice indeks da bi skrolovalo automatski tamo gde je kliknuto na prvoj
+            var doba = localStorage.getItem("putovanje");
+            while (flag != 1) {
+                switch(doba) {
+                    case "prolece":
+                        flag = 1;
+                        var element = document.getElementById("prolece");
+                        element.scrollIntoView();
+                        break;
+                    case "leto":
+                        flag = 1;
+                        var element = document.getElementById("leto");
+                        element.scrollIntoView();
+                        break;
+                    case "zima":
+                        flag = 1;
+                        var element = document.getElementById("zima");
+                        element.scrollIntoView();
+                        break;
+                    case "evropa":
+                        flag = 1;
+                        var element = document.getElementById("evropa");
+                        element.scrollIntoView();
+                        break;
+                    case "novagodina":
+                        flag = 1;
+                        var element = document.getElementById("ng");
+                        element.scrollIntoView();
+                        break;
+                    default: 
+                        var odgovor = confirm("Niste uneli odgovarajući period!\nŽelite li da pokušate ponovo?");
+                        if (odgovor === false) {
+                            flag = 1;
+                        } else {
+                            var doba = prompt("Izaberite period putovanja (godišnje doba ili nova godina)");
+                        }   
+                }
+            }
+        </script>
+    </body>
+
+</html>

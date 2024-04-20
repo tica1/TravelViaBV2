@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.zaglavlje {
+    margin: auto;
+}
+
+body {
+    background-color: #b19c9e;
+}
+
+.navigationmenu {
+    height: 30px;
+    background-color: #312b31;
+}
+
+.navigationmenu i {
+    padding-top: 5px;
+    color: #4a414b;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.navigationmenu span {
+    color: #e7e3d9;
+    padding-left: 15px;
+    font-weight: normal;  
+    transition: color 0.3s ease;
+}
+
+.navigationmenu span:hover {
+    color: #b19c9e;
+    transition: color 0.3s ease;
+}
+
+.kontaktic a {
+    text-decoration: none;
+}
+
+.travelogo {
+    max-width: 90%;
+    margin-top: 7px;
+    margin-left: 30px;
+}
+
+.travelogo img {
+    width: 400px;
+    height: 90px;
+    float: left;
+}
+
+.navmenu {
+    float: right;
+    line-height: 21px;
+    justify-content: center;
+    opacity: 60%;
+    height: 60px;
+}
+
+.navmenu li {
+    display: inline;
+    margin: 7px 0;
+}
+
+.navmenu a{
+    color: #4a414b;
+    text-decoration: none;    
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.navmenu li a {
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+
+.navmenu li a:hover {
+    font-size: 2em;
+    color: black;
+}
+
+.prva img{
+    padding-top: 10px;
+    max-width: 100%;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.prva img:hover {
+    transform: scale(1.01);
+}
+
+.kuda_putovati {
+    text-align: center;
+    color: #4a414b;
+    margin-top: 0px;
+}
+
+.kuda_putovati:hover {
+    text-shadow: 1px 1px #e7e3d9;
+}
+
+.dugme {
+    cursor: pointer;
+    position: relative;
+    left: 12.5%;
+    border-radius: 8px;
+    background-color: #e7e3d9;
+    transition-duration: 0.4s;
+    width: 75%;
+}
+
+.dugme:hover {
+    background-color: #4a414b;
+}
+
+.dugme2 {
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    background-color: #e7e3d9;
+    transition-duration: 0.4s;
+    width: 75%;
+}
+
+.dugme2:hover {
+    background-color: #4a414b;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    background-color: #e7e3d9;
+    transition-duration: 0.4s;
+    width: 75%;
+}
+
+input[type=submit]:hover {
+    background-color: #b19c9e;
+}
+
+.whereto {
+    display: flex;
+    padding: 5px;
+}
+
+.whereto > div {
+    margin: auto;
+    width: 20%;
+    padding: 5px;
+}
+
+.whereto div > img {
+    width: 100%;
+}
+
+.evropa {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.evropa:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.evropa:after {
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.zima {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.zima:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.zima:after {
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.novagodina {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.novagodina:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.novagodina:after {
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.zima {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.zima:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.zima:after {
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.prolece {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.prolece:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.prolece:after {
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.letovanje {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.letovanje:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.letovanje:after {
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.dodatninfo {
+    background-color: #312b31;
+    color: #b19c9e;
+    font-size: 15px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.brtelefona {
+    padding: 20 px;
+    margin: auto;
+}
+
+.mejl {
+    margin: auto;
+}
+
+.mejl a {
+    text-decoration: none;
+}
+
+.mejl span {
+    color: #b19c9e;
+    transition: color 0.3s ease;
+}
+
+.mejl span:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.adresa {
+    margin: auto;
+}
+
+#drustvenemreze {
+    height: 15px;
+}
+
+#drustvenemreze ul li {
+    display: inline;
+    float: right;
+    padding: 20px;
+}
+
+.dno {
+    margin: auto;
+    display: flex;
+}
+
+.dno p {
+    color: #4a414b;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.dno img {
+    width: 50px;
+    height: 50px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+ 
+@media screen and (max-width: 800px) {
+    .travelogo {
+        display: none;
+    }
+    .navmenu {
+        position: relative;
+        float: none; 
+        text-align: center;
+        line-height: normal;
+        height: auto;
+    }
+    .navmenu li {
+        display: block;
+        bottom: 10px;
+        top: 60px;
+    }
+    .navmenu a {
+        display: block;
+        padding: 10px;
+    }
+    .prva img {
+        padding-top: 10px;
+        margin-top: 5px;
+        max-width: 100%;
+    }
+    .whereto {
+        justify-content: space-around;
+    }
+    .whereto > div {
+        width: 20%;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+    .whereto div > img {
+        width: 100%;
+    }
+}
+
+
+

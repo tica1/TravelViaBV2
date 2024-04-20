@@ -1,0 +1,112 @@
+.klogo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.klogo > div img{
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.maps {
+    margin: 20px 10px;
+}
+.mapica iframe {
+    min-height: 400px;
+    width: 100%;
+}
+
+.mapica {
+    padding: 10px;
+    margin: auto;
+    border: 5px double #655b66;
+    border-radius: 10px;
+}
+
+.forma {
+    background-color: #655b66;
+    justify-content: center;
+    align-items: center;
+    border: 4px double #e7e3d9;
+    border-radius: 10px;
+    text-align: center;
+    color: #e7e3d9;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.forma > div {
+    text-align: center;
+    font-size: 2em;
+    color: #e7e3d9;
+}
+
+.forma input {
+    width: 30%;
+    font-size: 1em;
+    background-color: #e7e3d9;
+    margin-bottom: 10px;
+    color: #655b66cc;
+}
+
+.svikontakti {
+    font-size: 30px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-left: 30px;
+    background-color: #e7e3d9;
+    margin-bottom: 1.5%;
+    border: 5px double #655b66;
+    border-radius: 10px;
+}
+
+.kontmejl {
+    margin: auto;
+}
+
+.kontfon {
+    margin: auto;
+}
+
+.kontadr {
+    margin: auto;
+}
+
+.kontmejl a {
+    text-decoration: none;
+    color: #655b66;
+    transition: color 0.3s ease;
+}
+
+.kontmejl a:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.svikontakti > div p {
+    color: #655b66;
+}
+
+@media screen and (max-width:800px) {
+    .klogo > div {
+        padding-top: 3px;
+        flex-wrap: wrap;
+        padding-bottom: 3px;
+    }
+    .svikontakti {
+        margin-top: 2%;
+        padding-top: 10px;
+        flex-wrap: wrap;
+        font-size: 2em;
+    }
+    .forma {
+        margin: auto;
+    }
+    .forma input {
+        width: 80%;
+    }
+}

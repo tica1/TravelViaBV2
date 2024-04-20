@@ -1,0 +1,269 @@
+.izbor h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #655b66;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.izbor h2:hover {
+    color: #e7e3d9;
+    transition: color 0.3s ease;
+}
+
+.linkslike {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    text-align: center;
+    color: #655b66;
+}
+
+.linkslike > div {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.linkslike > div a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkslike > div img {
+    width: 100%;
+}
+
+.linkslike > div:hover {
+    transform: scale(1.1);
+    color: #e7e3d9;
+}
+
+.izborprolece {
+    border: 2px solid #655b66;
+    border-radius: 10px;
+}
+
+.izborprolece h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborprolece1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborprolece1 > div {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.izborprolece1 > div:hover {
+    transform: scale(1.02);
+    color: #e7e3d9;
+}
+
+.izborprolece1 > div img {
+    width: 100%;
+}
+
+.izborprolece1 > div h3 {
+    margin-top: 10px;
+}
+
+.izborjesen {
+    border: 2px solid #655b66;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.izborjesen h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborjesen1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborjesen1 > div {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.izborjesen1 > div:hover {
+    transform: scale(1.02);
+    color: #e7e3d9;
+}
+
+.izborjesen1 > div img {
+    width: 100%;
+}
+
+.izborjesen1 > div h3 {
+    margin-top: 10px;
+}
+
+.izborleto {
+    border: 2px solid #655b66;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.izborleto h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborleto1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborleto1 > div {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.izborleto1 > div:hover {
+    transform: scale(1.02);
+    color: #e7e3d9;
+}
+
+.izborleto1 > div img {
+    width: 100%;
+}
+
+.izborleto1 > div h3 {
+    margin-top: 10px;
+}
+
+.izborzima {
+    border: 2px solid #655b66;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.izborzima h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborzima1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborzima1 > div {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.izborzima1 > div:hover {
+    transform: scale(1.02);
+    color: #e7e3d9;
+}
+
+.izborzima1 > div img {
+    width: 100%;
+}
+
+.izborzima1 > div h3 {
+    margin-top: 10px;
+}
+
+.izborng {
+    border: 2px solid #655b66;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.izborng h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborng1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    color: #655b66;
+}
+
+.izborng1 > div {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.izborng1 > div:hover {
+    transform: scale(1.02);
+    color: #e7e3d9;
+}
+
+.izborng1 > div img {
+    width: 100%;
+}
+
+.izborng1 > div h3 {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:800px){
+    .linkslike > div {
+        width: 40%;
+    }
+    .linkslike > div img {
+        width: 90%;
+    }
+    .linkslike {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+

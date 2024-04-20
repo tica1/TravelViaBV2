@@ -1,0 +1,110 @@
+.kosmomi {
+    margin: auto;
+    background-color: #b19c9e;
+    padding-top: 0px;
+}
+
+.pocetak h3 {
+    text-align: center;
+    color:#655b66;
+    margin-top: 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.pocetak h3:hover {
+    color: #e7e3d9;
+    transition: color 0.3s ease;
+}
+
+.pocetak p {
+    text-align: center;
+    color: #655b66;
+    margin-top: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.pocetak p:hover {
+    color: #e7e3d9;
+    transition: color 0.3s ease;
+}
+
+.zastomi h3 {
+    text-align: center;
+    color: #655b66;
+    margin-top: 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.zastomi h3:hover {
+    color: #e7e3d9;
+    transition: color 0.3s ease;
+}
+
+.zastomi p {
+    text-align: center;
+    color: #655b66;
+    margin-top: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.zastomi p:hover {
+    color: #e7e3d9;
+    transition: color 0.3s ease;
+}
+
+.photos h3 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #655b66;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.photos h3:hover {
+    color: #e7e3d9;
+    transition: color 0.3s ease;
+}
+
+.srecahappy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.srecahappy > div {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.srecahappy > div img {
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.srecahappy > div:hover {
+    transform: scale(1.15);
+}
+
+@media screen and (max-width:800px) {
+    .srecahappy {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .srecahappy > div {
+        width: 40%;
+    }
+    .srecahappy > div img {
+        width: 90%;
+    }
+}
+
+
+

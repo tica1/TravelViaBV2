@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/onama.css">
+        <link rel="stylesheet" href="css/putovanja.css">
+        <link rel="stylesheet" href="css/kontakt.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title> Bon Voyage</title>  
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/31081dd50e.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <div class="zaglavlje">
+
+            <div class="navigationmenu">
+                <div class="e-mail">
+                    <i class="kontaktic"><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></i>
+                </div>
+                <div class="travelogo">
+                    <img src="images/logo1.png" alt="travel">
+                </div>
+            </div>
+
+            <div class="navmenu">
+                <ul>
+                    <li><a href="index.html">Naslovna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li><a href="putovanja.html">Putovanja</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="prva">
+                <div id="naslovnica">
+                    <img src="images/naslovna.jpg">
+                </div>
+            </div>
+
+            <div class="kosmomi">
+
+                <div class="pocetak">
+                    <h3>Gde snovi postaju destinacije</h3>
+                    <p>
+                        Želimo da vam pružimo ne samo putovanje, već iskustvo koje će vas inspirisati, obogatiti dušu i ostaviti traga u vašem srcu.<br>
+                        Bon Voyage je više od agencije za putovanja; mi smo vaši saputnici na putovanju ka ostvarivanju snova. <br>                    
+                        Bon Voyage je vaša kapija ka svetu čuda i nezaboravnih trenutaka.<br>
+                        Tamo gde snovi postaju destinacija, mi smo tu da vas provedemo kroz vrata neograničenih mogućnosti.
+                    </p>
+                </div>
+
+                <div class="zastomi">
+                    <h3>Zašto smo baš mi ono što vama treba?</h3>
+                    <p>
+                        Vaši snovi postaju naš izazov. Radimo sa strašću i posvećenjem kako bismo vam omogućili da doživite čaroliju putovanja na način koji odražava vaše želje.<br>
+                        Razumemo da je svako putovanje jedinstveno, baš kao i vaši snovi. Zato oblikujemo putovanja prema vašim individualnim preferencama.<br>
+                        Bon Voyage je vaš ključ za otkrivanje skrivenih dragulja sveta. Pratimo trendove, istražujemo nove destinacije i donosimo vam najbolje savete za savršeno putovanje.<br>
+                        Delimo sa vama vodiče, savete i inspiraciju kako biste otkrili najbolje od sveta.
+                    </p>
+                </div>
+
+                <div class="photos">
+
+                    <h3>Osmehe i sreću možete videti ovde</h3>
+                    <div class="srecahappy">
+                        <!--promenaslike bukvalno menja promenu sliku, kad miš uđe i kad izađe, pa je pozivana dva puta-->
+                        <div class="sreca1">
+                            <img src="images/happy1.jpg" id="sreca1" alt="photo" 
+                            onmouseover="promenaSlike(document.getElementById('sreca1').id, 'images/happy3.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca1').id, 'images/happy1.jpg')">
+                        </div>
+                        <div class="sreca2">
+                            <img src="images/happy2.jpg" id="sreca2" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca2').id, 'images/happy9.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca2').id, 'images/happy2.jpg')">
+                        </div>
+                        <div class="sreca3" >
+                            <img src="images/happy3.jpg" id="sreca3" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca3').id, 'images/happy10.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca3').id, 'images/happy3.jpg')">
+                        </div>
+                        <div class="sreca4">
+                            <img src="images/happy4.jpg" id="sreca4" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca4').id, 'images/happy11.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca4').id, 'images/happy4.jpg')">
+                        </div>
+                        <div class="sreca5">
+                            <img src="images/happy5.jpg" id="sreca5" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca5').id, 'images/happy12.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca5').id, 'images/happy5.jpg')">
+                        </div>
+                        <div class="sreca6">
+                            <img src="images/happy6.jpg" id="sreca6" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca6').id, 'images/happy13.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca6').id, 'images/happy6.jpg')">
+                        </div>
+                        <div class="sreca7">
+                            <img src="images/happy7.jpg" id="sreca7" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca7').id, 'images/happy14.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca7').id, 'images/happy7.jpg')">
+                        </div>
+                        <div class="sreca8">
+                            <img src="images/happy8.jpg" id="sreca8" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca8').id, 'images/happy15.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca8').id, 'images/happy8.jpg')">
+                        </div>
+                        <div class="sreca9">
+                            <img src="images/happy9.jpg" id="sreca9" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca9').id, 'images/happy6.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca9').id, 'images/happy9.jpg')">
+                        </div>
+                        <div class="sreca10">
+                            <img src="images/happy10.jpg" id="sreca10" alt="photo"
+                            onmouseover="promenaSlike(document.getElementById('sreca10').id, 'images/happy7.jpg')" 
+                            onmouseout="promenaSlike(document.getElementById('sreca10').id, 'images/happy10.jpg')">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+            function promenaSlike(currentpicture, newpicture) {
+                var currentpicture;
+                var newpicture;
+                document.getElementById(currentpicture).src = newpicture;
+                return;
+            }
+        </script>
+
+        <footer>
+            
+            <div class="dodatninfo">
+
+                <div class="brtelefona">
+                    <h3>Telefon</h3>
+                    <p><i class="fa fa-phone"></i>021111111</p>
+                    <p><i class="fa fa-phone"></i>021111112</p>
+                </div>
+                <div class="mejl">
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:bonvoyage@gmail.com"><span>bonvoyage@gmail.com</span></a></p>
+                </div>
+                <div class="adresa">
+                    <h3>Adresa</h3>
+                    <p><i class="fa fa-map-pin"></i>Bul.Kralja Petra I 8b</p>
+                    <p><i class="fa fa-map-pin"></i>Bul.Vojvode Stepe 57</p>
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div id="drustvenemreze">
+            <div>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram fa-lg"></a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" class="fa fa-whatsapp fa-lg"></a>
+                </li>
+            </ul>
+            </div>
+            <div class="dno">
+                <p class="kopirajt">Tijana Simunic &copy; IT94/22</p>
+                <img src="images/logo.png" alt="logo">
+            </div>
+        </div>
+
+    </body>
+
+</html>
